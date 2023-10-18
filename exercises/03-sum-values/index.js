@@ -6,4 +6,13 @@ window.calculateSumListener = function() {
 	var stringB = document.getElementById("secondNumber").value;
 
 	//your code goes here
+	// Convert the input values to numbers (assuming they contain numeric values)
+	var numberA = parseFloat(stringA);
+	var numberB = parseFloat(stringB);
+  
+	// Calculate the sum
+	var sum = numberA + numberB;
+  
+	// Display the sum in the third input
+	document.getElementById("resultNumber").value = sum;
 };
